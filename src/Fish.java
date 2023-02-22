@@ -1,5 +1,5 @@
 /**
- * write description
+ * fish class creates a fish with a specific environment
  *
  * @author Aikam Singh
  * @version 2/22/23
