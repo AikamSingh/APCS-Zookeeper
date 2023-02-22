@@ -7,17 +7,19 @@
 
 public class Animal {
     private String animalType;
-    private int idTag;
+    private static int idTag = 999;
+    private int id;
     private double value;
 
     /**
      * constructor for the Animal class
-     * @param idTag id of animal
      * @param animalType type of animal
      * @param value animal worth
      */
-    public Animal(int idTag, String animalType, double value){
-        this.idTag = idTag;
+    public Animal(String animalType, double value){
+        idTag++;
+        id = idTag;
+
         this.animalType = animalType;
         this.value = value;
     }
@@ -27,7 +29,7 @@ public class Animal {
      * @return id tag of animal
      */
     public int getIdTag(){
-        return idTag;
+        return id;
     }
 
     /**
