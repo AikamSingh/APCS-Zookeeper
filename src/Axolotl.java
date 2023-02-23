@@ -10,15 +10,28 @@ public class Axolotl extends Animal{
 
     Color color;
 
+    /**
+     * @param animalType type of animal
+     * @param value worth of animal
+     * @param color color of Axolotl
+     */
     public Axolotl(String animalType, double value, Color color) {
         super(animalType, value);
         this.color = color;
     }
 
+    /**
+     * gets the color of the Axolotl
+     * @return color of Axolotl
+     */
     public Color getColor() {
         return color;
     }
 
+    /**
+     * toString for Axolotl class
+     * @return information about Axolotl
+     */
     public String toString(){
         return super.toString() + "[color=" + color + "]";
     }
