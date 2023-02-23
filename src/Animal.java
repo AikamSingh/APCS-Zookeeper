@@ -10,6 +10,7 @@ public class Animal {
     private static int idTag = 999;
     private int id;
     private double value;
+    private boolean isHungry;
 
     /**
      * constructor for the Animal class
@@ -22,6 +23,7 @@ public class Animal {
 
         this.animalType = animalType;
         this.value = value;
+        isHungry = false;
     }
 
     /**
@@ -46,6 +48,29 @@ public class Animal {
      */
     public String getAnimalType(){
         return animalType;
+    }
+
+    /**
+     * method checks to see if animal is hungry
+     * @return if animal is hungry
+     */
+    public boolean isHungry(){
+        int hunger = (int) (Math.random() * 10) + 1;
+        isHungry = hunger > 8;
+
+        return isHungry;
+    }
+
+    /**
+     * feeds animal if it is hungry
+     * @return message
+     */
+    public String feed(){
+        if(isHungry){
+            isHungry = false;
+            return "animal fed";
+        }
+        return "animal is not hungry";
     }
 
     /**
