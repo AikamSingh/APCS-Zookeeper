@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * write description
+ * Zookeeper class
  *
  * @author Aikam Singh
  * @version 2/22/23
@@ -9,6 +9,10 @@ import java.util.ArrayList;
 
 public class Zookeeper {
     ArrayList<Animal> zoo;
+
+    /**
+     * constructor for the zookeeper class
+     */
     public Zookeeper(){
         zoo = new ArrayList<>();
     }

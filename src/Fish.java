@@ -6,7 +6,7 @@
  */
 
 public class Fish extends Animal{
-    private enum Environment {FRESHWATER, SALTWATER};
+    enum Environment {FRESHWATER, SALTWATER};
     private Environment waterType;
 
     /**

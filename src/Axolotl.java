@@ -6,7 +6,7 @@
  */
 
 public class Axolotl extends Animal{
-    private enum Color {PINK, GREEN, YELLOW, BLUE, BROWN};
+    enum Color {PINK, GREEN, YELLOW, BLUE, BROWN};
 
     Color color;
 
